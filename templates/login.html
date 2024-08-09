@@ -9,17 +9,17 @@
 <body>
   <div class="container">
     <h2 class="mt-5">Log in</h2>
-    <form action="/login_user" method="get">
+    <form action="/login" method="post">
       <div class="mb-3">
-        <label for="email" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="email" name="email" required>
+        <label for="user_name" class="form-label">User name</label>
+        <input type="text" class="form-control" id="user_name" name="user_name" required>
       </div>
       <div class="mb-3">
         <label for="password" class="form-label">Password</label>
         <input type="password" class="form-control" id="password" name="password" required>
       </div>
       <button type="submit" class="btn btn-primary">Log in</button>
-      <a href="/create_user" class="btn btn-primary">Don't have an acc? Create One! </a>
+      <a href="/sign_up" class="btn btn-primary">Don't have an acc? Create One! </a>
     </form>
 
   </div>
